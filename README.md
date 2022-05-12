@@ -1,5 +1,5 @@
 # galeria
 
-![Main Activity](MainActivity.png)
-![Gallery Activity](GalleryActivity.png)
+![Main Activity](MainActivity.PNG)
+![Gallery Activity](GalleryActivity.PNG)
 ![](Animação.gif)
