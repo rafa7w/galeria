@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         String password = passwordEditText.getText().toString();
 
         if(username.equals(DataModel.getInstance().userDetails.getUsername()) && password.equals(DataModel.getInstance().userDetails.getPassword())) {
-            Toast.makeText(MainActivity.this, getString(R.string.user_logged),Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
+            startActivity(intent);
         } else {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setTitle(getString(R.string.error));
